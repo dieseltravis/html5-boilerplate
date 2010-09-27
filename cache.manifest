@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# serve *.manifest as text/cache-manifest
+
+# a list of static files goes here and/or under the CACHE header below
+FALLBACK:
+# a page to show when in offline mode
+
+NETWORK:
+# files that should always be refreshed
+
+CACHE:
+# static files that won't change
+
+# more info: http://www.w3.org/TR/html5/offline.html
