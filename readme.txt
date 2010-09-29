@@ -16,6 +16,3 @@ CSS:
 misc:
 * added cache manifest, updated web.config
 * removed a bunch of unused (or very rarely used) files and directories
-
-TODO:
-* update reset to support html5 elements

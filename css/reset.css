@@ -1,9 +1,19 @@
 /*
 Based on:
+http://www.w3.org/TR/CSS2/sample.html
 http://developer.yahoo.com/yui/reset/
 http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+http://reset5.googlecode.com/hg/reset.css
+http://css-tricks.com/snippets/
 */
-html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,label,legend,p,blockquote,table,caption,tbody,tfoot,thead,tr,th,td
+html
+{
+    overflow-y: scroll;
+	color: #000;
+	background: #FFF;
+}
+
+html,body,div,span,applet,object,embed,iframe,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,label,legend,p,blockquote,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video
 { 
 	margin: 0;
 	padding: 0;
@@ -14,53 +24,193 @@ html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del
 	font-size: 100%;
 	font-family: inherit;
 	vertical-align: baseline;
+	background: transparent;
 }
+
 body
 {
 	line-height: 1;
-	color: black;
-	background: white;
 }
-:focus
+
+html,address,blockquote,body,dd,div,dl,dt,fieldset,form,frame,frameset,h1,h2,h3,h4,h5,h6,noframes,ol,p,ul,center,dir,hr,menu,pre,article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote
+{ 
+	display: block;
+}
+
+a, a:active, a img
 {
+	border: 0;
 	outline: 0;
 }
+
+:focus
+{
+	outline: thin dotted invert;
+}
+
 table
 {
+	display: table;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 caption,th,td
 {
 	text-align: left;
 	font-weight: normal;
 }
+
 fieldset,img
 { 
 	border: 0;
 }
+
 address,caption,cite,code,dfn,em,strong,th,var
 {
 	font-style: normal;
 	font-weight: normal;
 }
-ol,ul
+
+nav ul
 {
 	list-style: none;
 }
+
+ol
+{
+	list-style: decimal;
+}
+
+ul
+{
+	list-style: disc;
+}
+
+ul ul
+{
+	list-style: circle;
+}
+
 h1,h2,h3,h4,h5,h6
 {
 	font-size: 100%;
 	font-weight: normal;
 }
-blockquote:before,blockquote:after,q:before,q:after {
-	content: "";
+
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer
+{
+	cursor: pointer;
 }
-blockquote, q
+
+blockquote:before,blockquote:after,q:before,q:after
+{
+	content: "";
+	content: none;
+}
+
+blockquote,q
 {
 	quotes: "" "";
+	quotes: none;
 }
+
+ins
+{
+	text-decoration: underline;
+}
+
+del
+{
+	text-decoration: line-through;
+}
+
+sup,sub
+{
+   vertical-align: baseline;
+   position: relative;
+   font-size: .83em;
+}
+
+sup
+{
+	top: -0.4em;
+}
+
+sub
+{
+	top: 0.4em;
+}
+
+mark
+{
+	background: none;
+}
+
 abbr,acronym
 {
 	border: 0;
+}
+
+abbr[title],dfn[title]
+{
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
+strong,b
+{
+	font-weight: bolder;
+}
+em,i
+{
+	font-style: italic;
+}
+
+hr
+{
+	display: block;
+	height: 1px;
+	border: 0;	
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input[type="submit"],input[type="button"],button
+{
+    padding: 0;
+    margin: 0;
+}
+
+input,select,a img
+{
+	vertical-align: middle;
+}
+
+pre,tt,code,kbd,samp
+{
+	font-family: monospace;
+}
+
+pre
+{
+	white-space: pre;
+}
+
+@media print {
+	h1
+	{
+		page-break-before: always;
+	}
+
+	h1,h2,h3,h4,h5,h6
+	{
+		page-break-after: avoid;
+	}
+
+	ul,ol,dl
+	{
+		page-break-before: avoid;
+	}
 }
