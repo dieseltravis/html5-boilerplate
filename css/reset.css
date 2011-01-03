@@ -8,7 +8,7 @@ http://css-tricks.com/snippets/
 */
 html
 {
-    overflow-y: scroll;
+	overflow-y: scroll;
 	color: #000;
 	background: #FFF;
 }
@@ -127,9 +127,9 @@ del
 
 sup,sub
 {
-   vertical-align: baseline;
-   position: relative;
-   font-size: .83em;
+	vertical-align: baseline;
+	position: relative;
+	font-size: .83em;
 }
 
 sup
@@ -179,8 +179,8 @@ hr
 
 input[type="submit"],input[type="button"],button
 {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 input,select,a img
