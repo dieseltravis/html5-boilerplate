@@ -1,4 +1,4 @@
-(function (window) {
+(function (w) {
 
 $(function () {
 	// jQuery stuff
