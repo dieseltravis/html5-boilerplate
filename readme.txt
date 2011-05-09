@@ -2,12 +2,10 @@ HTML5 Boilerplate: Travis's Fork
 
 HTML:
 * XHTML-compliant
-* HTML5-specific items removed
 * additional meta and page info added
 
 JS:
 * main.js has default JS
-* unlink modernizr
 
 CSS:
 * reset.css included, but not linked
