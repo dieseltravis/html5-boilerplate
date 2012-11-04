@@ -1,7 +1,7 @@
-(function (w) {
+(function (w, $) {
 
 $(function () {
 	// jQuery stuff
 });
 
-})(window);
+})(this, this.jQuery);
